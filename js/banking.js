@@ -49,3 +49,15 @@ document.getElementById('withdraw-button').addEventListener('click', function ()
     // clear withdraw input
     withdrawInput.value = '';
 })
+document.getElementById('deposit-input').addEventListener('keyup', function(event){
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("deposit-button").click();
+       }
+})
+document.getElementById('withdraw-input').addEventListener('keyup', function(event){
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("withdraw-button").click();
+       }
+})
